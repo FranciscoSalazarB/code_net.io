@@ -1,0 +1,71 @@
+.main {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(
+      -60deg,
+      rgba(var(--color-1-rgb), 0.5) 20%,
+      rgba(var(--color-2-rgb), 0.5) 75%,
+      rgba(var(--color-3-rgb), 0.5)
+    ),
+    url("/images/login.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainCard {
+  width: 70%;
+  min-height: 80vh;
+  background: var(--back-ground-color-hex);
+  opacity: 0.96;
+  padding: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.mainHead {
+  margin-top: 2.2rem;
+  width: 100%;
+  text-align: center;
+}
+
+.mainHeaderLogin {
+  font-size: 3.5rem;
+  color: #fff;
+  text-shadow: 0 0 7px #fff, 0 0 5px #fff, 0 0 2px #fff,
+    0 0 42px var(--color-5-hex), 0 0 82px var(--color-5-hex),
+    0 0 92px var(--color-5-hex), 0 0 2px var(--color-5-hex),
+    0 0 15px var(--color-5-hex);
+  animation: flicker 2s infinite alternate;
+}
+
+.mainSubHeader {
+  font-size: 2rem;
+  color: #fff;
+  text-shadow: 0 0 7px #fff, 0 0 5px #fff, 0 0 2px #fff,
+    0 0 42px var(--color-2-hex), 0 0 82px var(--color-2-hex),
+    0 0 92px var(--color-2-hex), 0 0 2px var(--color-2-hex),
+    0 0 15px var(--color-2-hex);
+}
+
+@keyframes flicker {
+  0%,
+  18%,
+  22%,
+  25%,
+  53%,
+  57%,
+  100% {
+    text-shadow: 0 0 1px #fff, 0 0 4px #fff, 0 0 5px #fff,
+      0 0 40px var(--color-5-hex), 0 0 80px var(--color-5-hex),
+      0 0 50px var(--color-5-hex), 0 0 70px var(--color-5-hex),
+      0 0 15px var(--color-5-hex);
+  }
+  20%,
+  24%,
+  55% {
+    text-shadow: none;
+  }
+}
